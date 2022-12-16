@@ -3,7 +3,7 @@ var randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6
 
 var randomDiceImage = "dice" + randomNumber1 + ".png"; //dice1.png - dice6.png
 
-var randomImageSource = "images/" + randomDiceImage; //images/dice1.png - images/dice6.png
+var randomImageSource = "images/" + randomDiceImage; //images/dice1.png - images/dice6.png-Changing HTML from JS
 
 var image1 = document.querySelectorAll("img")[0];
 
@@ -13,8 +13,9 @@ image1.setAttribute("src", randomImageSource);
 var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
 var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
+//Changing HTML from JS
 
-document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
+document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);//Bcz of similar tag using like an array to access specific tag
 
 
 //If player 1 wins
